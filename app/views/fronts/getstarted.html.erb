@@ -1,0 +1,19 @@
+
+<div class="pinkcontainer">
+	<div class="row padding10t padding3b content2 text-center">
+		<p class="getstartedquote"><span class="weight900">"</span>Coming together is a beginning; keeping together is progress; working together is success.<span class="weight900">"</span> <br> <span class="getstartedquotename">Henry Ford</span></p>
+	</div>
+</div>
+
+<div class="row padding3v">
+  <%= form_for @enquiry, :url => {:controller => "fronts", :action => :getstartedcreate } do |enquiry|%>
+		<%= enquiry.text_field :fullname, :placeholder => "Full name", onfocus: "this.placeholder = ''", onblur: "this.placeholder = 'Full name'", class: "getstartedstyle" %>
+		<%= enquiry.text_field :phonenumber, :placeholder => "Phone number", onfocus: "this.placeholder = ''", onblur: "this.placeholder = 'Phone number'", class: "getstartedstyle" %>
+		<%= enquiry.text_field :emailaddress, :placeholder => "Email address", onfocus: "this.placeholder = ''", onblur: "this.placeholder = 'Email address'", class: "getstartedstyle" %>
+		<%= enquiry.text_field :franchisename, :placeholder => "Franchise name", onfocus: "this.placeholder = ''", onblur: "this.placeholder = 'Franchise name'", class: "getstartedstyle" %>
+		<%= enquiry.text_field :franchisewebsite, :placeholder => "Franchise website", onfocus: "this.placeholder = ''", onblur: "this.placeholder = 'Franchise website'", class: "getstartedstyle" %>
+		<div class="row padding3v text-center">
+			<%= enquiry.submit "Get Started", class: "getstartedbutton" %>
+		</div>
+	<% end %>
+</div>
