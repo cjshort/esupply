@@ -3,6 +3,6 @@ class GetStarted < ActionMailer::Base
 
   def getstarted(enquiry)
   	@enquiry = enquiry
-  	mail(to: "callumshorty@hotmail.com", subject: 'eSupplyPortal.co.uk Enquiry | READ IT')
+  	mail(to: "enquiries@besleyandcopp.co.uk", subject: 'eSupplyPortal.co.uk Enquiry | READ IT')
   end
 end
