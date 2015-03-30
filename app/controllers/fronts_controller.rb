@@ -12,7 +12,7 @@ class FrontsController < ApplicationController
   def getstartedcreate
     @enquiry = Getstated.create(contact_params)
     if @enquiry.save
-      GetStarted.getstarted(@enquiry).deliver
+     # GetStarted.getstarted(@enquiry).deliver
     else
       redirect_to :back, alert: "We had a problem sending your email, please contact us at sales@besleyandcopp.co.uk"
     end
