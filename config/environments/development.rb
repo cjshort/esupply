@@ -1,14 +1,5 @@
 Rails.application.configure do
 
-
-  config.action_mailer.smtp_settings = {
-   :address              => "titan.solardns.com",
-   :port                 => 465,
-   :user_name            => "besleyan+besleyandcopp.co.uk",
-   :authentication       => "plain",
-   :enable_starttls_auto => true
-  }
-
   config.action_mailer.default_url_options = { host: 'localhost', port: 3000}
   # Settings specified here will take precedence over those in config/application.rb.
 
