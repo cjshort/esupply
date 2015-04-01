@@ -89,12 +89,42 @@ input[type=text].getstartedstyle:focus {
   color: #333;
 }
 
+.businesscardletters{
+  font-weight: 900;
+  font-size: 0.9rem;
+}
+
 #nameinput{
   font-family: "Merriweather";
   margin-bottom: 2rem;
   font-size: 1.1rem;
   margin-top: 4rem;
   font-weight: 600;
+}
+
+.helpdeskbgcover{
+background: -moz-linear-gradient(-45deg,  rgba(40,40,40,0.6) 0%, rgba(40,40,40,0.59) 1%, rgba(0,0,0,0) 100%);
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,rgba(40,40,40,0.6)), color-stop(1%,rgba(40,40,40,0.59)), color-stop(100%,rgba(0,0,0,0)));
+background: -webkit-linear-gradient(-45deg,  rgba(40,40,40,0.6) 0%,rgba(40,40,40,0.59) 1%,rgba(0,0,0,0) 100%);
+background: -o-linear-gradient(-45deg,  rgba(40,40,40,0.6) 0%,rgba(40,40,40,0.59) 1%,rgba(0,0,0,0) 100%);
+background: -ms-linear-gradient(-45deg,  rgba(40,40,40,0.6) 0%,rgba(40,40,40,0.59) 1%,rgba(0,0,0,0) 100%);
+background: linear-gradient(135deg,  rgba(40,40,40,0.6) 0%,rgba(40,40,40,0.59) 1%,rgba(0,0,0,0) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99282828', endColorstr='#00000000',GradientType=1 );
+
+}
+
+.monetisationbg{
+  background-image: image-url('monetisationicon.png');
+  background-size: 10rem;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.supportbg{
+  background-image: image-url('supporticon.png');
+  background-size: 11rem;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 
 .videobg{
@@ -106,7 +136,7 @@ input[type=text].getstartedstyle:focus {
 }
 
 .videobg:hover{
-  background-image: url('playhover.png');
+  background-image: image-url('playhover.png');
   transition-duration: 300ms;
 }
 
@@ -489,6 +519,10 @@ a.item.selected:hover{
 
 .lineheight0{
   line-height: 0;
+}
+
+.lineheight15{
+  line-height: 1.5;
 }
 
 .margin21v
