@@ -16,4 +16,6 @@
 //= require headroom
 //= require jQuery.headroom
 //= require jQuery.matchHeight
+//= require foundation
+//= require foundation.reveal
 //= require_tree .

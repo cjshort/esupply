@@ -14,6 +14,8 @@
  *= require_self
  */
 
+
+
  .opacityhover{
    opacity: 1;
    transition-duration: 300ms;
@@ -131,7 +133,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99282828', e
   background-image: image-url('playicon.png');
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: 10rem;
   transition-duration: 300ms;
 }
 
@@ -3892,3 +3894,114 @@ padding-right: 2.9375em;
   height:100%
 }
 
+.reveal-modal-bg {
+  background: #000000;
+  background: rgba(0, 0, 0, 0.45);
+  bottom: 0;
+  display: none;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1004;
+  left: 0; }
+
+.reveal-modal {
+  border-radius: 3px;
+  display: none;
+  position: absolute;
+  top: 0;
+  visibility: hidden;
+  width: 100%;
+  z-index: 1005;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.2);
+  padding: 1.66667rem;
+  border: solid 1px #666666;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+  @media only screen and (max-width: 40em) {
+    .reveal-modal {
+      min-height: 100vh; } }
+  .reveal-modal .column, .reveal-modal .columns {
+    min-width: 0; }
+  .reveal-modal > :first-child {
+    margin-top: 0; }
+  .reveal-modal > :last-child {
+    margin-bottom: 0; }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal {
+      left: 0;
+      margin: 0 auto;
+      max-width: 38.55556rem;
+      right: 0;
+      width: 80%; } }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal {
+      top: 5.55556rem; } }
+  .reveal-modal.radius {
+    border-radius: 3px; }
+  .reveal-modal.round {
+    border-radius: 1000px; }
+  .reveal-modal.collapse {
+    padding: 0; }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal.tiny {
+      left: 0;
+      margin: 0 auto;
+      max-width: 55.55556rem;
+      right: 0;
+      width: 30%; } }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal.small {
+      left: 0;
+      margin: 0 auto;
+      max-width: 55.55556rem;
+      right: 0;
+      width: 40%; } }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal.medium {
+      left: 0;
+      margin: 0 auto;
+      max-width: 55.55556rem;
+      right: 0;
+      width: 60%; } }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal.large {
+      left: 0;
+      margin: 0 auto;
+      max-width: 55.55556rem;
+      right: 0;
+      width: 70%; } }
+  @media only screen and (min-width: 40.0625em) {
+    .reveal-modal.xlarge {
+      left: 0;
+      margin: 0 auto;
+      max-width: 55.55556rem;
+      right: 0;
+      width: 95%; } }
+  .reveal-modal.full {
+    height: 100vh;
+    height: 100%;
+    left: 0;
+    margin-left: 0 !important;
+    max-width: none !important;
+    min-height: 100vh;
+    top: 0; }
+    @media only screen and (min-width: 40.0625em) {
+      .reveal-modal.full {
+        left: 0;
+        margin: 0 auto;
+        max-width: 55.55556rem;
+        right: 0;
+        width: 100%; } }
+  .reveal-modal.toback {
+    z-index: 1003; }
+  .reveal-modal .close-reveal-modal {
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.22222rem;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+    top: 0.55556rem;
+    right: 1.22222rem; }

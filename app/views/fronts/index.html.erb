@@ -7,11 +7,16 @@
       <div class="large-6 columns content">
         <h1 class="white weight100 font32">Providing world-class print platforms for the franchise industry</h1>
         <div class="margin1t">
-          <%= link_to getstarted_path do %><span class="maingetstarted">GET STARTED</span><% end %><a href="https://www.youtube.com/watch?v=-Pyx5dWJfHs" target="_blank"><span class="mainwatchthevideo">WATCH THE VIDEO</span></a>
+          <%= link_to getstarted_path do %><span class="maingetstarted">GET STARTED</span><% end %><a href="#" data-reveal-id="myModal"><span class="mainwatchthevideo">WATCH THE VIDEO</span></a>
         </div>
       </div>
     </div>
   </div>
+</div>
+
+<div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-Pyx5dWJfHs?rel=0&amp;controls=0" frameborder="0" allowfullscreen></iframe>
+  <a class="close-reveal-modal" aria-label="Close">&#215;</a>
 </div>
 
 <div class="mainoverlay">
@@ -30,10 +35,10 @@
       </div>
       <div class="large-6 columns">
         <ul class="social-inline-list">
-          <li><a href="http://www.facebook.com/pages/besley-and-copp/390339894371512"><%= image_tag("sub3-fb.png") %></a></li>
-          <li><a href="http://www.twitter.com/besleyandcopp"><%= image_tag("sub3-twt.png") %></a></li>
-          <li><a href="http://www.linkedin.com/company/1290683/"><%= image_tag("sub3-lnk.png") %></a></li>
-          <li><a href="http://www.youtube.com/besleyandcopp/"><%= image_tag("sub3-yt.png") %></a></li>
+          <li><a  target="_blank" href="http://www.facebook.com/pages/besley-and-copp/390339894371512"><%= image_tag("sub3-fb.png") %></a></li>
+          <li><a  target="_blank" href="http://www.twitter.com/besleyandcopp"><%= image_tag("sub3-twt.png") %></a></li>
+          <li><a  target="_blank" href="http://www.linkedin.com/company/1290683/"><%= image_tag("sub3-lnk.png") %></a></li>
+          <li><a  target="_blank" href="http://www.youtube.com/besleyandcopp/"><%= image_tag("sub3-yt.png") %></a></li>
         </ul>
       </div>
     </div>
@@ -45,7 +50,7 @@
 
 
 <div class="row padding5v">
-  <a target="_blank" href="https://www.youtube.com/watch?v=-Pyx5dWJfHs"><div class="large-4 columns row1 videobg content text-center">
+  <a href="#" data-reveal-id="myModal"><div class="large-4 columns row1 videobg content text-center">
   </div></a>
   <div class="large-8 columns content row1">
     <p class="margin0b">Designed specifically for the Franchise industry, the eSupply Portal is your ideal web-based partner, empowering your network to personalise, order and distribute brand-specific products and services quickly and effectively.
@@ -93,9 +98,10 @@
 
 <div class="padding5v">
   <div class="row cyancontainer">
-    <div class="large-12 columns content text-center padding3v">
-      <h4 class="margin2t whitetextsmall3 thin">If you are a franchisor or you look after a similar multi-site organisation, then why not <b>call us today for a no-obligation chat.</b><br>
-        <h3 class="margin2b whitetextsmall3 mli">0845 676 9114</h3></h4>
+    <div class="large-12 columns content text-center padding5v">
+      <h4 class="whitetextsmall3 thin">If you are a franchisor or you look after a similar multi-site organisation, then why not <b>call us today for a no-obligation chat.</b><br>
+      </h4>
+      <h2 class="whitetextsmall3">0845 676 9114</h2>
     </div>
   </div>
 </div>
@@ -105,3 +111,7 @@ $(function() {
     $('.row1').matchHeight();
 });
 </script>
+
+  <script>
+    $(document).foundation();
+  </script>

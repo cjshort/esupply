@@ -3,6 +3,7 @@ class HelpdesksController < ApplicationController
         @recent = Helpdesk.order("created_at desc").limit(5)
         @featuredone = Helpdesk.where(:featuredone => true).limit(4)
         @featuredtwo = Helpdesk.where(:featuredtwo => true).limit(5)
+        set_meta_tags :site => 'eSupply Portal', :title => 'Helpdesk', :reverse => true
   end
 
   def show
